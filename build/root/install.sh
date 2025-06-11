@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/dumb-init /bin/bash
 
 # exit script if return code != 0
 set -e
@@ -23,6 +23,7 @@ fi
 
 # aur packages
 ####
+export BOOST_ROOT=/opt/boost1.86
 
 # define aur packages
 # note we are currently using the aur package ' libtorrent-rasterbar-1_2-git' as opposed to
